@@ -1,8 +1,9 @@
+/*打印输入中，小写字母输入频度的直方图*/
+
 #include <stdio.h>
 
-
 int main()
-{
+{
 	int pchar[26] = {0};
 	int c;
 	int maxnum = 0;
