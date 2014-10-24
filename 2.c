@@ -1,3 +1,5 @@
+/*å­—ç¬¦ä¸²ç›¸å‡ï¼Œå°†str1ä¸­ï¼Œä»»ä½•ä¸str2ä¸­ç›¸åŒçš„å­—ç¬¦éƒ½åˆ é™¤*/
+
 #include <stdio.h>
 
 void squeeze(char *str1, char *str2)
@@ -7,14 +9,14 @@ void squeeze(char *str1, char *str2)
 	int index = 0; 
 	int i = 0;
 
-	//½¨Á¢str2µÄ¹şÏ£±í
+	//å»ºç«‹str2çš„å“ˆå¸Œè¡¨
 	while(str2[i] != '\0')
 	{
 		hash[str2[i]]++;
 		i++;
 	}
 
-	index = 0;		//index¼ÇÂ¼str1ÖĞ¿ÉÉ¾³ı×Ö·ûµÄ×îĞ¡Ë÷Òı
+	index = 0;		//indexè®°å½•str1ä¸­å¯åˆ é™¤å­—ç¬¦çš„æœ€å°ç´¢å¼•
 	i = 0;
 	while(str1[i] != '\0')
 	{		
@@ -26,7 +28,6 @@ void squeeze(char *str1, char *str2)
 		i++;
 	}
 	str1[index] = str1[i];
-	
 }
 
 
